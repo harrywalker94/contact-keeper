@@ -5,7 +5,10 @@
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "server": "nodemon server.js"
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "clientinstall": "npm install --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "repository": {
         "type": "git",
@@ -17,5 +20,18 @@
     "bugs": {
         "url": "https://github.com/harrywalker94/contact-keeper/issues"
     },
-    "homepage": "https://github.com/harrywalker94/contact-keeper#readme"
+    "homepage": "https://github.com/harrywalker94/contact-keeper#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "config": "^3.3.1",
+        "express": "^4.17.1",
+        "express-validator": "^6.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.9.21"
+    },
+    "devDependencies": {
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4"
+    },
+    "proxy": "http://localhost:5000"
 }
