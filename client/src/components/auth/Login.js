@@ -22,7 +22,7 @@ export const Login = () => {
       <h1>
         Account <span className="text-primary">Login</span>
       </h1>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className="form-group">
           <label htmlFor="name">Email</label>
           <input type="text" name="email" value={email} onChange={onChange} />
