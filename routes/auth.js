@@ -11,7 +11,7 @@ const User = require("../models/User");
 // @desc     Get logged in User
 // @access   Private
 
-// If correct token is sent and we're logged in, this request object is goign to have a user object
+// If correct token is sent and we're logged in, this request object is going to have a user object
 // attached to it with the current logged in users ID
 // .select('-password) doesn't return the password
 router.get("/", auth, async(req, res) => {
@@ -51,7 +51,7 @@ router.post(
             // If password doesn;t match, return status message
 
             if (!isMatch) {
-                return res.status(400).json({ msg: "Invalid Crednetials" });
+                return res.status(400).json({ msg: "Invalid Credentials" });
             }
 
             const payload = {
