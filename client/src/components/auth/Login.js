@@ -21,10 +21,10 @@ export const Login = (props) => {
   }, [error, isAuthenticated, props.history]);
 
   const [user, setUser] = useState({
-
+    name: "",
     email: "",
     password: "",
-
+    password2: "",
   });
 
   const { email, password } = user;
