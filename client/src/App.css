@@ -3,14 +3,14 @@
 /* Global Styles */
 
 :root {
-    --primary-color: #F78154;
+    --primary-color: #f78154;
     --secondary-color: #2e5eaa;
     --dark-color: #333333;
     --light-color: #f4f4f4;
     --danger-color: #dc3545;
     --success-color: #28a745;
     --blue-color: #2e5eaa;
-    --pink-color: #B4436C;
+    --pink-color: #b4436c;
 }
 
 * {
